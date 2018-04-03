@@ -1,0 +1,295 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Banorte using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+
+	<title>Santander - Analíticas</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Banorte">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Banorte">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/style.css">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#263238">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#263238">
+
+</head>
+
+<body>
+	<div class="mobile-wrapper"></div>
+
+	<nav>
+		<span class="open-menu">
+			<button class="btn">
+				<i class="fa fa-sort-up"></i>
+			</button>
+		</span>
+		<div class="sidebar-header">
+			<span class="text-right"><a href="#" id="nav-close">X</a></span>
+			<div class="sidebar-header-logo">
+
+				<img src="img/icon_santander.png" alt="">
+			</div>
+			<div class="sidebar-header-profilepic">
+				<img src="img/profile.jpg" alt="">
+			</div>
+			<p>Hola Laura</p>
+		</div>
+		<ul class="list-unstyled main-menu">
+
+			<!--Include your navigation here-->
+
+			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/analitycs.png" alt=""></span><span class="menu-text">Notificaciones </span></a></li>
+			<li><a href="simulador.html"><span class="icon"><img src="img/icons/solicitud.png" alt=""></span><span class="menu-text">Nueva solicitud </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/icons/004-smartphone.png" alt=""></span><span class="menu-text">Folio de usuario </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/icons/home.svg" alt=""></span><span class="menu-text">Home </span></a></li>
+			<li><a href="analiticas.html"><span class="icon"><img src="img/icons/analitycs.svg" alt=""></span><span class="menu-text">Analíticas </span></a></li>
+			<li><a href="solicitudes.html"><span class="icon"><img src="img/icons/requests.svg" alt=""></span><span class="menu-text">Solicitudes </span></a></li>
+			<li><a href="detalles.html"><span class="icon"><img src="img/icons/verified.svg" alt=""></span><span class="menu-text">Verificaciones </span></a></li>
+			<li><a href="perfil.html"><span class="icon"><img src="img/icons/settings.svg" alt=""></span><span class="menu-text">Configuración </span></a></li>
+		</ul>
+	</nav>
+	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+
+
+</div> -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<!--Include your brand here-->
+
+			<div class="navbar-header">
+
+				<!-- Mobile -->
+				<span id="nav-expander" class="nav-expander fixed">
+	        <img src="img/icons/menu.png" alt="">
+	      </span>
+				<span class="notifications">
+						<i class="fa fa-bell-o" aria-hidden="true"></i>
+					</span>
+
+			</div>
+			<div class="desktop-nav-links col-md-12">
+				<div class="col-md-8">
+
+					<div class="search">
+
+						<input type="text" class="form-control" placeholder="Buscar">
+					</div>
+
+
+
+
+				</div>
+				<div class="col-md-4">
+					<ul class="nav navbar-nav">
+						<li class="notifications">
+							<i class="fa fa-bell-o" aria-hidden="true"></i>
+						</li>
+						<li class="profile">
+							<img src="img/profile.jpg" alt="">
+						</li>
+						<li class="profile-name">Buenas tardes Laura</li>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container-fluid -->
+	</div>
+	<div id="analiticas-solicitud" class="container">
+
+		<div class="row">
+
+
+			<div class="col-xs-12">
+				<h3 class="section-header-home">
+					ANALÍTICAS
+				</h3>
+
+			</div>
+			<div class="col-xs-12 scrollmenu">
+				<a href="#estadisticas">Estadísticas</a>
+				<a href="#producto">Analíticas Producto</a>
+				<a href="#indices">Índices</a>
+				<a href="#eficiencia">Eficiencia</a>
+			</div>
+    </div>
+
+		<div id="estadisticas" class="row">
+			<div class="col-xs-12 col-md-12">
+				<h3 class="section-header">GRÁFICA</h3>
+			</div>
+			<div class="col-xs-12 col-md-12">
+        <div class="panel panel-border section-panel">
+					<div class="panel-body">
+						<canvas id="grafica" height="100"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div id="producto">
+			<div class="row">
+
+				<div class="col-xs-12 col-md-6">
+					<h3 id="capacidad" class="section-header">Estatus</h3>
+					<div class="panel panel-border section-panel">
+						<div class="panel-body">
+							<canvas id="estatus" height="150"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="section-header">Productos</h3>
+					<div class="panel panel-border section-panel">
+						<div class="panel-body">
+							<canvas id="producto-chart" height="150"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h3 class="section-header">Puntos de Venta</h3>
+					<div class="panel panel-border section-panel">
+						<div class="panel-body">
+							<canvas id="puntos_venta" height="150"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3 class="section-header">Origen</h3>
+					<div class="panel panel-border section-panel">
+						<div class="panel-body">
+							<canvas id="origen" height="150"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<h3  id="documentacion" class="section-header">% DE CONVERSIÓN</h3>
+
+				<p class="verify-list">SATELITE<span>23<span></p>
+				<p class="verify-list">COYOACÁN de domicilio<span>46<span></p>
+				<p class="verify-list">CENTRO<span>16<span></p>
+				<p class="verify-list">ROMA<span>14<span></p>
+				<p class="verify-list">CONDESA<span>45<span></p>
+				<p class="verify-list">POLANCO<span>11<span></p>
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<h3  id="documentacion" class="section-header">VOL DE TRANSACCIONES</h3>
+
+				<p class="verify-list">SATELITE<span>23<span></p>
+				<p class="verify-list">COYOACÁN de domicilio<span>46<span></p>
+				<p class="verify-list">CENTRO<span>16<span></p>
+				<p class="verify-list">ROMA<span>14<span></p>
+				<p class="verify-list">CONDESA<span>45<span></p>
+				<p class="verify-list">POLANCO<span>11<span></p>
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<h3  id="documentacion" class="section-header">MEDIANA DE TIEMPO</h3>
+
+				<p class="verify-list">SATELITE<span>23<span></p>
+				<p class="verify-list">COYOACÁN de domicilio<span>46<span></p>
+				<p class="verify-list">CENTRO<span>16<span></p>
+				<p class="verify-list">ROMA<span>14<span></p>
+				<p class="verify-list">CONDESA<span>45<span></p>
+				<p class="verify-list">POLANCO<span>11<span></p>
+
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="footer">
+
+
+		<div class="icon-menu">
+			<img src="img/icons/house.png" alt="">
+		</div>
+
+
+		<div class="icon-menu">
+			<img src="img/icons/analitycs.png" alt="">
+		</div>
+
+		<div class="icon-menu">
+			<img src="img/icons/new-request.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/attach.png" alt="">
+		</div>
+
+
+
+		<div class="icon-menu">
+			<img src="img/icons/checklist.png" alt="">
+		</div>
+	</div>
+
+  <script src="libs/jquery.js"></script>
+  <script src="libs/bootstrap.js"></script>
+  <script src="libs/jquery.navgoco.min.js"></script>
+  <script src="libs/bootstrap-datepicker.min.js"></script>
+  <script src="libs/bootstrap-datepicker.es.min.js"></script>
+  <script src="libs/bootstrap-editable.min.js"></script>
+  <script src="libs/cleave.min.js"></script>
+  <script src="libs/cleave-phone.mx.js"></script>
+  <script src="libs/swiper.min.js"></script>
+  <script src="libs/dropzone.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+	<script src="js/index.js"></script>
+  <script src="js/analiticas.js"></script>
+
+
+</body>
+
+</html>
