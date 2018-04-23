@@ -23,8 +23,14 @@ h3.section-header {
 
 h3.section-header-home {
   font-size: 20px;
-  padding: 15px;
-  border-left: 1px solid #eb0029; }
+  padding: 15px; }
+
+h3.section-header-home:before {
+  content: '\2807';
+  font-size: 30px;
+  color: #eb0029;
+  position: absolute;
+  margin: -5px -16px; }
 
 .section-list-title {
   font-size: 12px;
@@ -48,9 +54,18 @@ h5.status {
   text-decoration: underline;
   font-weight: 800; }
 
+table th:after {
+  content: " \00b7";
+  text-align: rigth;
+  color: #eb0029; }
+
+table th:last-child:after {
+  content: none; }
+
 .navbar {
-  background: #eb0029;
-  border: 1px solid #eb0029;
+  background-image: url("../img/bg-hd.png");
+  background-size: contain;
+  background-repeat: repeat-x;
   border-radius: 0; }
 
 .desktop-nav-links {
@@ -155,7 +170,8 @@ nav {
   font-size: 15px;
   top: 0;
   width: 20em;
-  z-index: 2000;
+  z-index: 100;
+  border-right: 1px solid #eb0029;
   transition: left 0.3s ease-in-out 0s;
   -webkit-transition: left 0.3s ease-in-out 0s;
   -moz-transition: left 0.3s ease-in-out 0s;
@@ -262,7 +278,9 @@ a:hover .icon-item {
 
 .credit-text {
   text-align: center;
-  margin-top: 5px; }
+  margin-top: 5px;
+  color: #eb0029;
+  font-size: 20px; }
 
 .form-control:focus,
 input.form-control {
@@ -270,12 +288,19 @@ input.form-control {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  box-shadow: 0 2px 2px #888;
-  border: 0; }
-
-.form-group {
   margin-bottom: 15px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  border-radius: 30px; }
+
+.search .form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 0; }
 
 .footer .icon-menu {
   -webkit-box-flex: 1;
@@ -478,9 +503,7 @@ a:hover .doc-info {
 
 .panel.section-panel {
   margin-top: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 9px 0;
-  border-radius: 16px; }
+  background-color: #fff; }
 
 .panel.section-panel img {
   padding: 15px 0; }
@@ -544,6 +567,9 @@ a[aria-expanded="false"] + span {
 
 .home .panel-heading {
   border-bottom: 1px solid #ddd; }
+
+.home .panel-heading.red, .panel-heading.red {
+  border-bottom: 1px solid #eb0029; }
 
 .home .panel-heading a {
   float: right;
@@ -854,6 +880,16 @@ body {
 .filter-bar {
   padding-top: 10px; }
 
+.logo-img {
+  height: 51px; }
+
+.fontAwesome {
+  font-family: 'Helvetica', FontAwesome, sans-serif; }
+
+.fontAwesome::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff; }
+
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {
@@ -888,9 +924,7 @@ body {
   .panel-heading a {
     display: block; }
   .panel.section-panel {
-    margin-top: 20px;
-    box-shadow: 0 4px 9px 0;
-    border-radius: 16px; }
+    margin-top: 20px; }
   .panel.section-panel img {
     padding: 15px 0; }
   .desktop-nav-links {
