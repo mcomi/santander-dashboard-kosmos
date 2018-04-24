@@ -44,97 +44,143 @@
 </head>
 
 <body>
-		<nav>
-				<span class="open-menu">
-						<i class="fa fa-bars"></i>
-					
-						<i class="fa fa-sort-up"></i>
-				</span>
-				<ul class="list-unstyled main-menu">
-		
-					<!--Include your navigation here-->
-		
-					<li><a href="index.html"><span class="icon"><img src="img/home.png" alt=""></span><span class="menu-text">Home </span></a></li>
-					<li><a href="solicitud.html"><span class="icon"><img src="img/solicitud.png" alt=""></span><span class="menu-text">Nueva solicitud </span></a></li>
-					<li><a href="solicitudes.html"><span class="icon"><img src="img/solicitudes.png" alt=""></span><span class="menu-text">Solicitudes </span></a></li>
-					<li><a href="perfil.html"><span class="icon"><img src="img/icons/settings.svg" alt=""></span><span class="menu-text">Configuración </span></a></li>
-					<li><a href="analiticas.html"><span class="icon"><img src="img/sound-waves.png" alt=""></span><span class="menu-text">Analíticas </span></a></li>
-				</ul>
-			</nav>
-			<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+	<nav>
+		<span class="open-menu">
+			<i class="fa fa-bars"></i>
+
+			<i class="fa fa-sort-up"></i>
+		</span>
+		<ul class="list-unstyled main-menu">
+
+			<!--Include your navigation here-->
+
+			<li>
+				<a href="index.html">
+					<span class="icon">
+						<img src="img/home.png" alt="">
+					</span>
+					<span class="menu-text">Home </span>
+				</a>
+			</li>
+			<li>
+				<a href="solicitud.html">
+					<span class="icon">
+						<img src="img/solicitud.png" alt="">
+					</span>
+					<span class="menu-text">Nueva solicitud </span>
+				</a>
+			</li>
+			<li>
+				<a href="solicitudes.html">
+					<span class="icon">
+						<img src="img/solicitudes.png" alt="">
+					</span>
+					<span class="menu-text">Solicitudes </span>
+				</a>
+			</li>
+			<li>
+				<a href="perfil.html">
+					<span class="icon">
+						<img src="img/icons/settings.svg" alt="">
+					</span>
+					<span class="menu-text">Configuración </span>
+				</a>
+			</li>
+			<li>
+				<a href="analiticas.html">
+					<span class="icon">
+						<img src="img/sound-waves.png" alt="">
+					</span>
+					<span class="menu-text">Analíticas </span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
 		
 		
 		</div> -->
-			<div class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<!--Include your brand here-->
-		
-					<div class="navbar-header">
-						<!-- Mobile -->
-						<span id="nav-expander" class="nav-expander fixed">
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<!--Include your brand here-->
+
+			<div class="navbar-header">
+				<!-- Mobile -->
+				<span id="nav-expander" class="nav-expander fixed">
 					<img src="img/icons/menu.png" alt="">
-				  </span>
-						<span class="notifications">
-								<i class="fa fa-bell-o" aria-hidden="true"></i>
-							</span>
-		
-					</div>
-					<div class="desktop-nav-links col-md-12">
-						<div class="col-md-5">
-							<div class="row">
-		
-								<div class="search col-md-12">
-										<ul class="nav navbar-nav col-md-5">
-		
-											<li role="presentation" class="dropdown">
-													<span id="search-title" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-														BUSCAR POR FOLIO
-													</span>
-													<ul class="dropdown-menu">
-															<li><a data-search="folio" class="search-select">BUSCAR POR FOLIO</a></li>
-													  <li><a data-search="nombre" class="search-select">BUSCAR POR NOMBRE</a></li>
-													</ul>
-												  </li>
-										</ul>
-									
-									<div class="col-md-7">
-		
-										<input type="text" class="form-control fontAwesome" placeholder="&#xF002;">
-									</div>
-								</div>
-							</div>
-		
-		
-		
-		
-						</div>
-						<div class="col-md-3">
-							<img src="img/logo-blanco.png" class="logo-img" alt="">
-						</div>
-						<div class="col-md-4">
-							<ul class="nav navbar-nav">
-								<li class="notifications">
-									<i class="fa fa-bell-o" aria-hidden="true"></i>
-								</li>
-								<li role="presentation" class="dropdown">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-												<i class="fa fa-user"></i>	Buenas tardes Laura 
-										</a>
-										<ul class="dropdown-menu">
-										  <li><a href="">Mi perfil</a></li>
-										  <li><a href="">Cerrar sesión</a></li>
-										</ul>
-									  </li>
-								
-							</ul>
-		
-						</div>
-					</div>
-		
-				</div>
-				<!-- /.container-fluid -->
+				</span>
+				<span class="notifications">
+					<i class="fa fa-bell-o" aria-hidden="true"></i>
+				</span>
+
 			</div>
+			<div class="desktop-nav-links col-md-12">
+				<div class="col-md-5">
+					<div class="row">
+
+						<div class="search col-md-12">
+							<ul class="nav navbar-nav col-md-5">
+
+								<li role="presentation" class="dropdown">
+									<span id="search-title" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+										Buscar por Folio
+									</span>
+									<ul class="dropdown-menu">
+										<li>
+											<a data-search="Folio" class="search-select">Buscar por FOLIO</a>
+										</li>
+										<li>
+											<a data-search="nombre" class="search-select">Buscar por Nombre</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+							<div class="col-md-6">
+
+								<input type="text" class="form-control fontAwesome" placeholder="&#xF002;">
+							</div>
+							<div class="col-md-1">
+								<button class="btnSearch">Ir</button>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+				<div class="col-md-3">
+					<img src="img/logo-blanco.png" class="logo-img" alt="">
+				</div>
+				<div class="col-md-4">
+					<ul class="nav navbar-nav">
+						<li class="notifications">
+							<i class="fa fa-bell-o" aria-hidden="true"></i>
+						</li>
+						<li role="presentation" class="dropdown">
+							<span class="dropdown-toggle user" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-user"></i> Bienvenido Ejecutivo
+							</span>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="">Mi perfil</a>
+								</li>
+								<li>
+									<a href="">Cerrar sesión</a>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+		<!-- /.container-fluid -->
+	</div>
 	<div class="container">
 		<div class="row">
 
@@ -147,19 +193,19 @@
 		<div class="row">
 
 
-				<div class="forma-solicitud">
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h4 class="panel-title">
+			<div class="forma-solicitud">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
 								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-personales" aria-expanded="true" aria-controls="datos-personales">
 									Datos personales
 									<i class="fa fa-minus"></i>
 								</a>
 								<span class="mobile-only">Datos personales</span>
 							</h4>
-							</div>
-							<form action="" id="formDatosPersonales">
+						</div>
+						<form action="" id="formDatosPersonales">
 							<div id="datos-personales" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 								<div class="panel-body">
 									<div class="row">
@@ -198,10 +244,10 @@
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 											<label for="sexo">Sexo</label>
 											<select class="form-control validate" id="sexo" placeholder="">
-											<option value="" selected>...</option>
-											<option value="m">Masculino</option>
-											<option value="f">Femenino</option>
-										</select>
+												<option value="" selected>...</option>
+												<option value="m">Masculino</option>
+												<option value="f">Femenino</option>
+											</select>
 											<span class="input-success"></span>
 											<span class="input-error"></span>
 										</div>
@@ -211,7 +257,8 @@
 
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 											<label for="fecha_nac">Fecha de nacimiento</label>
-											<input type="text" data-custom-class="form-control validate" id="fecha_nac" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date">
+											<input type="text" data-custom-class="form-control validate" id="fecha_nac" data-format="DD-MM-YYYY" data-template="D MMM YYYY"
+											    name="date">
 											<span class="input-success"></span>
 											<span class="input-error"></span>
 										</div>
@@ -259,10 +306,10 @@
 										<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 											<label for="nacionalidad">Nacionalidad</label>
 											<select class="form-control validate" id="nacionalidad" placeholder="">
-											<option value="" selected>...</option>
-											<option value="m">Mexicana</option>
-											<option value="e">Extranjera</option>
-										</select>
+												<option value="" selected>...</option>
+												<option value="m">Mexicana</option>
+												<option value="e">Extranjera</option>
+											</select>
 											<span class="input-success"></span>
 											<span class="input-error"></span>
 										</div>
@@ -297,7 +344,9 @@
 									</div>
 									<div class="row">
 										<div id="phone-message-alert" class="alert alert-info alert-dismissible hidden" role="alert">
-											<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
 											<i class="fa fa-info-circle"></i> Hemos enviado un código a tu celular
 										</div>
 										<h1 class="title-section">Ingresar código</h1>
@@ -386,47 +435,47 @@
 											<label for="arraigo_laboral">Arraigo Laboral (meses)</label>
 											<select class="form-control validate" id="arraigo_laboral">
 												<option value="">...</option>
-								      	<option value="1">1</option>
-								      	<option value="2">2</option>
-								      	<option value="3">3</option>
-								      	<option value="4">4</option>
-								      	<option value="5">5</option>
-								      	<option value="6">6</option>
-								      	<option value="7">7</option>
-								      	<option value="8">8</option>
-								      	<option value="9">9</option>
-								      	<option value="10">10</option>
-								      	<option value="11">11</option>
-								      	<option value="12">12</option>
-								      	<option value="13">13</option>
-								      	<option value="14">14</option>
-								      	<option value="15">15</option>
-								      	<option value="16">16</option>
-								      	<option value="17">17</option>
-								      	<option value="18">18</option>
-								      	<option value="19">19</option>
-								      	<option value="20">20</option>
-								      	<option value="21">21</option>
-								      	<option value="22">22</option>
-								      	<option value="23">23</option>
-								      	<option value="24">24</option>
-								      	<option value="25">25</option>
-								      	<option value="26">26</option>
-								      	<option value="27">27</option>
-								      	<option value="28">28</option>
-								      	<option value="29">29</option>
-								      	<option value="30">30</option>
-								      	<option value="31">31</option>
-								      	<option value="32">32</option>
-								      	<option value="33">33</option>
-								      	<option value="34">34</option>
-								      	<option value="35">35</option>
-								      	<option value="36">36</option>
-								      	<option value="37">37</option>
-								      	<option value="38">38</option>
-								      	<option value="39">39</option>
-								      	<option value="40">40</option>
-								      </select>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+												<option value="32">32</option>
+												<option value="33">33</option>
+												<option value="34">34</option>
+												<option value="35">35</option>
+												<option value="36">36</option>
+												<option value="37">37</option>
+												<option value="38">38</option>
+												<option value="39">39</option>
+												<option value="40">40</option>
+											</select>
 											<span class="input-success"></span>
 											<span class="input-error"></span>
 										</div>
@@ -434,47 +483,47 @@
 											<label for="arraigo_domicilio">Arraigo en domicilio actual (meses)</label>
 											<select class="form-control validate" id="arraigo_domicilio">
 												<option value="">...</option>
-								      	<option value="1">1</option>
-								      	<option value="2">2</option>
-								      	<option value="3">3</option>
-								      	<option value="4">4</option>
-								      	<option value="5">5</option>
-								      	<option value="6">6</option>
-								      	<option value="7">7</option>
-								      	<option value="8">8</option>
-								      	<option value="9">9</option>
-								      	<option value="10">10</option>
-								      	<option value="11">11</option>
-								      	<option value="12">12</option>
-								      	<option value="13">13</option>
-								      	<option value="14">14</option>
-								      	<option value="15">15</option>
-								      	<option value="16">16</option>
-								      	<option value="17">17</option>
-								      	<option value="18">18</option>
-								      	<option value="19">19</option>
-								      	<option value="20">20</option>
-								      	<option value="21">21</option>
-								      	<option value="22">22</option>
-								      	<option value="23">23</option>
-								      	<option value="24">24</option>
-								      	<option value="25">25</option>
-								      	<option value="26">26</option>
-								      	<option value="27">27</option>
-								      	<option value="28">28</option>
-								      	<option value="29">29</option>
-								      	<option value="30">30</option>
-								      	<option value="31">31</option>
-								      	<option value="32">32</option>
-								      	<option value="33">33</option>
-								      	<option value="34">34</option>
-								      	<option value="35">35</option>
-								      	<option value="36">36</option>
-								      	<option value="37">37</option>
-								      	<option value="38">38</option>
-								      	<option value="39">39</option>
-								      	<option value="40">40</option>
-								      </select>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+												<option value="32">32</option>
+												<option value="33">33</option>
+												<option value="34">34</option>
+												<option value="35">35</option>
+												<option value="36">36</option>
+												<option value="37">37</option>
+												<option value="38">38</option>
+												<option value="39">39</option>
+												<option value="40">40</option>
+											</select>
 											<span class="input-success"></span>
 											<span class="input-error"></span>
 										</div>
@@ -485,20 +534,20 @@
 												<div class="col-xs-3">
 													<input type="radio" value="si" id="si_acreditado" name="inc_acreditado">
 													<label class="icon-label" for="si_acreditado">
-										        <div class="icon-item">
-										          <img src="img/icons/yes-icon.svg" class="svg" alt="">
-										        </div>
+														<div class="icon-item">
+															<img src="img/icons/yes-icon.svg" class="svg" alt="">
+														</div>
 														<span>SI</span>
-										      </label>
+													</label>
 												</div>
 												<div class="col-xs-3">
 													<input type="radio" value="no" id="no_acreditado" name="inc_acreditado">
 													<label class="icon-label" for="no_acreditado">
-										        <div class="icon-item">
+														<div class="icon-item">
 															<img src="img/icons/yes-icon.svg" class="svg no" alt="">
-										        </div>
+														</div>
 														<span>NO</span>
-										      </label>
+													</label>
 												</div>
 											</div>
 										</div>
@@ -516,20 +565,20 @@
 													<div class="col-xs-3">
 														<input type="radio" value="si" id="mismo_domicilio" name="domicilio_acreditado">
 														<label class="icon-label" for="mismo_domicilio">
-											        <div class="icon-item">
-											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
-											        </div>
+															<div class="icon-item">
+																<img src="img/icons/yes-icon.svg" class="svg" alt="">
+															</div>
 															<span>SI</span>
-											      </label>
+														</label>
 													</div>
 													<div class="col-xs-3">
 														<input type="radio" value="no" id="no_mismo_domicilio" name="domicilio_acreditado">
 														<label class="icon-label" for="no_mismo_domicilio">
-											        <div class="icon-item">
+															<div class="icon-item">
 																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
-											        </div>
+															</div>
 															<span>NO</span>
-											      </label>
+														</label>
 													</div>
 												</div>
 											</div>
@@ -582,48 +631,49 @@
 											</div>
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label for="fecha_nac_ca">Fecha de nacimiento</label>
-												<input type="text" data-custom-class="form-control validate" id="fecha_nac_ca" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date">
+												<input type="text" data-custom-class="form-control validate" id="fecha_nac_ca" data-format="DD-MM-YYYY" data-template="D MMM YYYY"
+												    name="date">
 												<span class="input-success"></span>
 												<span class="input-error"></span>
 											</div>
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label for="estado_nac_ca">Estado de nacimiento</label>
 												<select class="form-control validate" id="estado_nac_ca" placeholder="">
-														<option value="" selected>...</option>
-														<option value="0">Todo México</option>
-														<option value="1">Aguascalientes</option>
-														<option value="2">Baja California</option>
-														<option value="3">Baja California Sur</option>
-														<option value="4">Campeche</option>
-														<option value="5">Coahuila de Zaragoza</option>
-														<option value="6">Colima</option>
-														<option value="7">Chiapas</option>
-														<option value="8">Chihuahua</option>
-														<option value="9">Distrito Federal</option>
-														<option value="10">Durango</option>
-														<option value="11">Guanajuato</option>
-														<option value="12">Guerrero</option>
-														<option value="13">Hidalgo</option>
-														<option value="14">Jalisco</option>
-														<option value="15">México</option>
-														<option value="16">Michoacán de Ocampo</option>
-														<option value="17">Morelos</option>
-														<option value="18">Nayarit</option>
-														<option value="19">Nuevo León</option>
-														<option value="20">Oaxaca</option>
-														<option value="21">Puebla</option>
-														<option value="22">Querétaro</option>
-														<option value="23">Quintana Roo</option>
-														<option value="24">San Luis Potosí</option>
-														<option value="25">Sinaloa</option>
-														<option value="26">Sonora</option>
-														<option value="27">Tabasco</option>
-														<option value="28">Tamaulipas</option>
-														<option value="29">Tlaxcala</option>
-														<option value="30">Veracruz de Ignacio de la Llave</option>
-														<option value="31">Yucatán</option>
-														<option value="32">Zacatecas</option>
-													</select>
+													<option value="" selected>...</option>
+													<option value="0">Todo México</option>
+													<option value="1">Aguascalientes</option>
+													<option value="2">Baja California</option>
+													<option value="3">Baja California Sur</option>
+													<option value="4">Campeche</option>
+													<option value="5">Coahuila de Zaragoza</option>
+													<option value="6">Colima</option>
+													<option value="7">Chiapas</option>
+													<option value="8">Chihuahua</option>
+													<option value="9">Distrito Federal</option>
+													<option value="10">Durango</option>
+													<option value="11">Guanajuato</option>
+													<option value="12">Guerrero</option>
+													<option value="13">Hidalgo</option>
+													<option value="14">Jalisco</option>
+													<option value="15">México</option>
+													<option value="16">Michoacán de Ocampo</option>
+													<option value="17">Morelos</option>
+													<option value="18">Nayarit</option>
+													<option value="19">Nuevo León</option>
+													<option value="20">Oaxaca</option>
+													<option value="21">Puebla</option>
+													<option value="22">Querétaro</option>
+													<option value="23">Quintana Roo</option>
+													<option value="24">San Luis Potosí</option>
+													<option value="25">Sinaloa</option>
+													<option value="26">Sonora</option>
+													<option value="27">Tabasco</option>
+													<option value="28">Tamaulipas</option>
+													<option value="29">Tlaxcala</option>
+													<option value="30">Veracruz de Ignacio de la Llave</option>
+													<option value="31">Yucatán</option>
+													<option value="32">Zacatecas</option>
+												</select>
 												<span class="input-success"></span>
 												<span class="input-error"></span>
 											</div>
@@ -634,10 +684,10 @@
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label for="nacionalidad_ca">Nacionalidad</label>
 												<select class="form-control validate" id="nacionalidad_ca" placeholder="">
-														<option value="" selected>...</option>
-														<option value="m">Mexicana</option>
-														<option value="e">Extranjera</option>
-													</select>
+													<option value="" selected>...</option>
+													<option value="m">Mexicana</option>
+													<option value="e">Extranjera</option>
+												</select>
 												<span class="input-success"></span>
 												<span class="input-error"></span>
 											</div>
@@ -709,10 +759,10 @@
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label for="act_economica_ca">Actividad Económica</label>
 												<select class="form-control validate" id="act_economica_ca" placeholder="">
-														<option value="" selected>...</option>
-														<option value="m">Empleado</option>
-														<option value="e">Etc</option>
-													</select>
+													<option value="" selected>...</option>
+													<option value="m">Empleado</option>
+													<option value="e">Etc</option>
+												</select>
 												<span class="input-success"></span>
 												<span class="input-error"></span>
 											</div>
@@ -728,48 +778,48 @@
 											<div class="form-group col-xs-12 col-md-4 padding-dekstop-col">
 												<label for="arraigo_laboral_ca">Arraigo Laboral (meses)</label>
 												<select class="form-control validate" id="arraigo_laboral_ca">
-														<option value="">...</option>
-										      	<option value="1">1</option>
-										      	<option value="2">2</option>
-										      	<option value="3">3</option>
-										      	<option value="4">4</option>
-										      	<option value="5">5</option>
-										      	<option value="6">6</option>
-										      	<option value="7">7</option>
-										      	<option value="8">8</option>
-										      	<option value="9">9</option>
-										      	<option value="10">10</option>
-										      	<option value="11">11</option>
-										      	<option value="12">12</option>
-										      	<option value="13">13</option>
-										      	<option value="14">14</option>
-										      	<option value="15">15</option>
-										      	<option value="16">16</option>
-										      	<option value="17">17</option>
-										      	<option value="18">18</option>
-										      	<option value="19">19</option>
-										      	<option value="20">20</option>
-										      	<option value="21">21</option>
-										      	<option value="22">22</option>
-										      	<option value="23">23</option>
-										      	<option value="24">24</option>
-										      	<option value="25">25</option>
-										      	<option value="26">26</option>
-										      	<option value="27">27</option>
-										      	<option value="28">28</option>
-										      	<option value="29">29</option>
-										      	<option value="30">30</option>
-										      	<option value="31">31</option>
-										      	<option value="32">32</option>
-										      	<option value="33">33</option>
-										      	<option value="34">34</option>
-										      	<option value="35">35</option>
-										      	<option value="36">36</option>
-										      	<option value="37">37</option>
-										      	<option value="38">38</option>
-										      	<option value="39">39</option>
-										      	<option value="40">40</option>
-										      </select>
+													<option value="">...</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="27">27</option>
+													<option value="28">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>
+													<option value="31">31</option>
+													<option value="32">32</option>
+													<option value="33">33</option>
+													<option value="34">34</option>
+													<option value="35">35</option>
+													<option value="36">36</option>
+													<option value="37">37</option>
+													<option value="38">38</option>
+													<option value="39">39</option>
+													<option value="40">40</option>
+												</select>
 												<span class="input-success"></span>
 												<span class="input-error"></span>
 											</div>
@@ -777,47 +827,47 @@
 												<label for="arraigo_domicilio_ca">Arraigo en domicilio actual (meses)</label>
 												<select class="form-control validate" id="arraigo_domicilio_ca">
 													<option value="">...</option>
-										      	<option value="1">1</option>
-										      	<option value="2">2</option>
-										      	<option value="3">3</option>
-										      	<option value="4">4</option>
-										      	<option value="5">5</option>
-										      	<option value="6">6</option>
-										      	<option value="7">7</option>
-										      	<option value="8">8</option>
-										      	<option value="9">9</option>
-										      	<option value="10">10</option>
-										      	<option value="11">11</option>
-										      	<option value="12">12</option>
-										      	<option value="13">13</option>
-										      	<option value="14">14</option>
-										      	<option value="15">15</option>
-										      	<option value="16">16</option>
-										      	<option value="17">17</option>
-										      	<option value="18">18</option>
-										      	<option value="19">19</option>
-										      	<option value="20">20</option>
-										      	<option value="21">21</option>
-										      	<option value="22">22</option>
-										      	<option value="23">23</option>
-										      	<option value="24">24</option>
-										      	<option value="25">25</option>
-										      	<option value="26">26</option>
-										      	<option value="27">27</option>
-										      	<option value="28">28</option>
-										      	<option value="29">29</option>
-										      	<option value="30">30</option>
-										      	<option value="31">31</option>
-										      	<option value="32">32</option>
-										      	<option value="33">33</option>
-										      	<option value="34">34</option>
-										      	<option value="35">35</option>
-										      	<option value="36">36</option>
-										      	<option value="37">37</option>
-										      	<option value="38">38</option>
-										      	<option value="39">39</option>
-										      	<option value="40">40</option>
-										      </select>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="27">27</option>
+													<option value="28">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>
+													<option value="31">31</option>
+													<option value="32">32</option>
+													<option value="33">33</option>
+													<option value="34">34</option>
+													<option value="35">35</option>
+													<option value="36">36</option>
+													<option value="37">37</option>
+													<option value="38">38</option>
+													<option value="39">39</option>
+													<option value="40">40</option>
+												</select>
 												<span class="input-success"></span>
 												<span class="input-error"></span>
 											</div>
@@ -828,14 +878,15 @@
 									</div>
 								</div>
 							</div>
-							</form>
-							<!--Termina datos personales-->
+						</form>
+						<!--Termina datos personales-->
 
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwo">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#historial" aria-expanded="false" aria-controls="historial">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#historial" aria-expanded="false"
+								    aria-controls="historial">
 									Historial Crediticio
 									<i class="fa fa-plus"></i>
 								</a>
@@ -875,20 +926,20 @@
 												<div class="col-xs-3">
 													<input type="radio" value="si" id="si_tarjeta_credito" name="tarjeta_credito">
 													<label class="icon-label" for="si_tarjeta_credito">
-											        <div class="icon-item">
-											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
-											        </div>
-															<span>SI</span>
-											      </label>
+														<div class="icon-item">
+															<img src="img/icons/yes-icon.svg" class="svg" alt="">
+														</div>
+														<span>SI</span>
+													</label>
 												</div>
 												<div class="col-xs-3">
 													<input type="radio" value="no" id="no_tarjeta_credito" name="tarjeta_credito">
 													<label class="icon-label" for="no_tarjeta_credito">
-											        <div class="icon-item">
-																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
-											        </div>
-															<span>NO</span>
-											      </label>
+														<div class="icon-item">
+															<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+														</div>
+														<span>NO</span>
+													</label>
 												</div>
 											</div>
 										</div>
@@ -907,20 +958,20 @@
 												<div class="col-xs-3">
 													<input type="radio" value="si" id="si_titular" name="titular_credito_hipotecario">
 													<label class="icon-label" for="si_titular">
-											        <div class="icon-item">
-											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
-											        </div>
-															<span>SI</span>
-											      </label>
+														<div class="icon-item">
+															<img src="img/icons/yes-icon.svg" class="svg" alt="">
+														</div>
+														<span>SI</span>
+													</label>
 												</div>
 												<div class="col-xs-3">
 													<input type="radio" value="no" id="no_titular" name="titular_credito_hipotecario">
 													<label class="icon-label" for="no_titular">
-											        <div class="icon-item">
-																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
-											        </div>
-															<span>NO</span>
-											      </label>
+														<div class="icon-item">
+															<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+														</div>
+														<span>NO</span>
+													</label>
 												</div>
 											</div>
 										</div>
@@ -931,20 +982,20 @@
 												<div class="col-xs-3">
 													<input type="radio" value="si" id="si_automotriz" name="credito_automotriz">
 													<label class="icon-label" for="si_automotriz">
-											        <div class="icon-item">
-											          <img src="img/icons/yes-icon.svg" class="svg" alt="">
-											        </div>
-															<span>SI</span>
-											      </label>
+														<div class="icon-item">
+															<img src="img/icons/yes-icon.svg" class="svg" alt="">
+														</div>
+														<span>SI</span>
+													</label>
 												</div>
 												<div class="col-xs-3">
 													<input type="radio" value="no" id="no_automotriz" name="credito_automotriz">
 													<label class="icon-label" for="no_automotriz">
-											        <div class="icon-item">
-																<img src="img/icons/yes-icon.svg" class="svg no" alt="">
-											        </div>
-															<span>NO</span>
-											      </label>
+														<div class="icon-item">
+															<img src="img/icons/yes-icon.svg" class="svg no" alt="">
+														</div>
+														<span>NO</span>
+													</label>
 												</div>
 											</div>
 										</div>
@@ -960,7 +1011,8 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingThree">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pre-autorizacion" aria-expanded="false" aria-controls="pre-autorizacion">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pre-autorizacion" aria-expanded="false"
+								    aria-controls="pre-autorizacion">
 									Pre Autorización
 									<i class="fa fa-plus"></i>
 								</a>
@@ -991,7 +1043,8 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingThree">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-complementarios" aria-expanded="false" aria-controls="datos-complementarios">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-complementarios" aria-expanded="false"
+								    aria-controls="datos-complementarios">
 									Datos Complementarios
 									<i class="fa fa-plus"></i>
 								</a>
@@ -1177,14 +1230,14 @@
 						</div>
 					</div>
 				</div>
+			</div>
+
+
+
+
+
+
 		</div>
-
-
-
-
-
-
-	</div>
 
 	</div>
 

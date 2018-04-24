@@ -27,3 +27,9 @@ var myChart2 = new Chart(ctx2, {
     }]
   }
 });
+
+$('.search-select').click(function(e){
+  e.preventDefault()
+  var tipoQueryBusqueda = $(this).data('search');
+  $('#search-title').text('Buscar por ' + tipoQueryBusqueda + ' ');
+})
