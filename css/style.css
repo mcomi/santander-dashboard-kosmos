@@ -261,7 +261,8 @@ body.nav-expanded {
   padding-right: 15px; }
 
 .navbar-header .notifications {
-  float: right;
+  position: absolute;
+  right: 30px;
   color: white;
   margin-top: 13px;
   font-size: 20px; }
@@ -348,6 +349,13 @@ input.form-control {
   font-size: 15px;
   vertical-align: middle;
   padding-top: 10px; }
+
+.num-notifications {
+  position: absolute;
+  right: -11px;
+  top: 6px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px; }
 
 .navbar-nav li span:after {
   font-family: FontAwesome;
@@ -986,6 +994,12 @@ table.table-calculadora > tbody > tr:last-child > td:first-child {
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 801px) {
+  .num-notifications {
+    position: absolute;
+    right: 18px;
+    top: 26px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px; }
   .container {
     padding-top: 100px;
     padding-left: 6em; }
