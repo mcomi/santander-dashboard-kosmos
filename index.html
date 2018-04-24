@@ -44,33 +44,23 @@
 </head>
 
 <body>
-	<div class="mobile-wrapper"></div>
+	
 
 	<nav>
 		<span class="open-menu">
-			<button class="btn">
+				<i class="fa fa-bars"></i>
+			
 				<i class="fa fa-sort-up"></i>
-			</button>
 		</span>
-		<div class="sidebar-header">
-			<span class="text-right"><a href="#" id="nav-close">X</a></span>
-			<div class="sidebar-header-logo">
-
-				<img src="img/logo-blanco.png" alt="">
-			</div>
-			<div class="sidebar-header-profilepic">
-				<img src="img/profile.jpg" alt="">
-			</div>
-			<p>Hola Laura</p>
-		</div>
 		<ul class="list-unstyled main-menu">
 
 			<!--Include your navigation here-->
 
-			<li><a href="analiticas.html"><span class="icon"><img src="img/home.png" alt=""></span><span class="menu-text">Notificaciones </span></a></li>
-			<li><a href="simulador.html"><span class="icon"><img src="img/solicitud.png" alt=""></span><span class="menu-text">Nueva solicitud </span></a></li>
-			<li><a href="index.html"><span class="icon"><img src="img/solicitudes.png" alt=""></span><span class="menu-text">Folio de usuario </span></a></li>
+			<li><a href="index.html"><span class="icon"><img src="img/home.png" alt=""></span><span class="menu-text">Home </span></a></li>
+			<li><a href="solicitud.html"><span class="icon"><img src="img/solicitud.png" alt=""></span><span class="menu-text">Nueva solicitud </span></a></li>
+			<li><a href="solicitudes.html"><span class="icon"><img src="img/solicitudes.png" alt=""></span><span class="menu-text">Solicitudes </span></a></li>
 			<li><a href="perfil.html"><span class="icon"><img src="img/icons/settings.svg" alt=""></span><span class="menu-text">Configuración </span></a></li>
+			<li><a href="analiticas.html"><span class="icon"><img src="img/sound-waves.png" alt=""></span><span class="menu-text">Analíticas </span></a></li>
 		</ul>
 	</nav>
 	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
@@ -83,7 +73,6 @@
 			<!--Include your brand here-->
 
 			<div class="navbar-header">
-
 				<!-- Mobile -->
 				<span id="nav-expander" class="nav-expander fixed">
 	        <img src="img/icons/menu.png" alt="">
@@ -94,18 +83,35 @@
 
 			</div>
 			<div class="desktop-nav-links col-md-12">
-				<div class="col-md-4">
+				<div class="col-md-5">
+					<div class="row">
 
-					<div class="search">
+						<div class="search col-md-12">
+								<ul class="nav navbar-nav col-md-5">
 
-						<input type="text" class="form-control fontAwesome" placeholder="&#xF002; Buscar">
+									<li role="presentation" class="dropdown">
+											<span id="search-title" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+												BUSCAR POR FOLIO
+											</span>
+											<ul class="dropdown-menu">
+													<li><a data-search="folio" class="search-select">BUSCAR POR FOLIO</a></li>
+											  <li><a data-search="nombre" class="search-select">BUSCAR POR NOMBRE</a></li>
+											</ul>
+										  </li>
+								</ul>
+							
+							<div class="col-md-7">
+
+								<input type="text" class="form-control fontAwesome" placeholder="&#xF002;">
+							</div>
+						</div>
 					</div>
 
 
 
 
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<img src="img/logo-blanco.png" class="logo-img" alt="">
 				</div>
 				<div class="col-md-4">
@@ -113,10 +119,16 @@
 						<li class="notifications">
 							<i class="fa fa-bell-o" aria-hidden="true"></i>
 						</li>
-						<li class="profile notifications">
-							<i class="fa fa-user"></i>
-						</li>
-						<li class="profile-name">Buenas tardes Laura</li>
+						<li role="presentation" class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-user"></i>	Buenas tardes Laura 
+								</a>
+								<ul class="dropdown-menu">
+								  <li><a href="">Mi perfil</a></li>
+								  <li><a href="">Cerrar sesión</a></li>
+								</ul>
+							  </li>
+						
 					</ul>
 
 				</div>
@@ -144,7 +156,7 @@
       <div class="col-xs-12 col-md-6">
         <h3 class="section-header-home">CONSULTA DE ESTATUS</h3>
         <div class="form-group padding-dekstop-col">
-          <label for="folio_usuario">Folio de usuario</label>
+          <label for="folio_usuario" class="red">Folio de usuario</label>
           <input type="tel" class="form-control validate" id="folio_usuario">
           <span class="input-success"></span>
           <span class="input-error"></span>
